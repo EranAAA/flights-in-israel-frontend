@@ -1,0 +1,68 @@
+.flight-top-table {
+   margin-top: 20px;
+   font-family: Livvic-Regular;
+
+   h3 {
+      margin-top: 2px;
+      margin-bottom: 10px;
+      text-align: center;
+   }
+
+   .table-container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+         margin-top: 2px;
+         margin-bottom: 2px;
+         text-align: center;
+      }
+
+      .table-1 {
+         box-shadow: 0 0 3px 0px;
+         border-radius: 3px;
+         background-color: #FFF;
+
+         .top-n-preview {
+            .column-short {
+               width: 65px;
+               min-width: 50px;
+            }
+
+            .column-long {
+               width: 240px;
+               min-width: 200px;
+            }
+         }
+      }
+   }
+
+   table {
+      border-collapse: collapse;
+      text-align: center;
+      font-size: rem(13px);
+
+      td,
+      th {
+         text-align: left;
+         padding: 6px;
+      }
+
+      th {
+         text-align: center;
+         background-color: #3D3C42;
+         color: #FFF
+      }
+
+      td:not(:first-child) {
+         text-align: center;
+      }
+
+      tr:nth-child(even) {
+         background-color: #dddddd;
+      }
+   }
+}

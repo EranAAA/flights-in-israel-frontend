@@ -1,0 +1,59 @@
+.flight-filter {
+   font-family: Livvic-Regular;
+   width: 100%;
+
+   .accordion-button:not(.collapsed) {
+      color: #121212;
+      background-color: unset;
+   }
+
+
+   .accordion-header {
+      text-align: center
+   }
+
+   .dropdown-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      // gap: 10px;
+      // margin-top: 30px;
+   }
+
+   label {
+      margin-top: 5px;
+      font-size: rem(17px);
+      // color: #FFF;
+      // text-shadow: 0px 0px 5px black;
+      border-radius: 4px 4px 0px 0px;
+      // background-color: #121212bc;
+
+      .select {
+         width: 124px;
+         color: #121212;
+      }
+
+      .select-larger {
+         width: 130px;
+         color: #121212;
+      }
+   }
+
+   .search-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+   }
+
+   .refresh-date {
+      font-size: rem(15px);
+      // font-family: Livvic-Bold;
+      // margin: 0;
+      margin-top: 10px;
+      padding: 4px;
+      text-align: center;
+   }
+
+}

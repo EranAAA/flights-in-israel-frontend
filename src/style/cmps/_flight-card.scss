@@ -1,0 +1,82 @@
+.flight-card {
+   display: flex;
+   justify-content: center;
+   align-items: stretch;
+   font-family: Livvic-Regular;
+   margin-top: 10px;
+   flex-direction: column;
+
+   .overview-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      margin-left: 10px;
+   }
+
+   .card-title-left {
+      margin-top: 0px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-align: left;
+      border-bottom: 1px solid #12121272;
+   }
+
+   .card-title-center {
+      margin-top: 0px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+   }
+
+   .box-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .box-1 {
+         width: 28%;
+         height: 30%;
+         padding: 8px;
+         text-align: center;
+         border-radius: 10px;
+         min-width: 120px;
+         min-height: 150px;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         max-height: 150px;
+         justify-content: space-around;
+
+         h4 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+         }
+
+         .box-1-data {
+            height: 60%;
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+            font-size: rem(40px);
+
+            span {
+               margin-top: 14px;
+               font-size: rem(16px);
+            }
+         }
+
+         .box-1-sub-data {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+         }
+      }
+   }
+
+}

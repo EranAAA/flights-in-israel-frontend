@@ -1,0 +1,23 @@
+.app-dashboard {
+   overflow: scroll;
+   height: calc(100vh - 75px);
+   font-family: Livvic-Regular;
+
+   h1 {
+      font-size: rem(25px);
+      margin: 0;
+   }
+   
+   h3 {
+      font-size: rem(20px);
+      margin: 0;
+   }
+
+   .dashboard-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+
+}

@@ -1,0 +1,14 @@
+.app-home {
+   padding: 10px;
+   text-align: center;
+   font-family: "Livvic-Regular";
+   height: calc(100vh - 59px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   
+   img {
+      width: 300px;
+   }
+}
