@@ -4,6 +4,8 @@ Flights in Israel is the app that, as the title says, brings all the passenger f
 
 If you need to check in addition to your flight you also get the full flight history with indication if the flight is delayed (in minutes) or canceled.
 
+** Fligts updated every 30 min **
+
 DASHBOARD: 
 1. Avg. delay
 2. Flights per day/hour
