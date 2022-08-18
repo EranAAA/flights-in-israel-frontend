@@ -34,6 +34,7 @@ https://flights-in-israel.herokuapp.com/
    <img src="./src/style/imgs/flight_2.png" alt="" />
    
    Example for flight 6H 531 with ISRAIR AIRLINES: 
+   
    We can see all the flight history and learn that this flight keeps delaying each flight!
    <img src="./src/style/imgs/flight_3.png" alt="" />
    
