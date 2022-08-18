@@ -1,7 +1,13 @@
 ## Flights In Israel
    
-Is the perfect companion for school, college or university.
-in simple signup you can build your perfect online week schedule
+Flights in Israel is the app that, as the title says, brings all the passenger flights in and out from Israel Ben Gurion Airport.
+If you need to check in addition to your flight you also get the full flight history with indication if the flight is delayed (in minutes) or canceled.
+
+DASHBOARD: 
+1. Avg. delay
+2. Flights per day/hour
+3. Statistics per Airline/Flight No
+4. Avg. canceled
   
 ## Lessons Learned
 
