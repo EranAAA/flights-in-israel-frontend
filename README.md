@@ -16,10 +16,10 @@ https://flights-in-israel.herokuapp.com/
 
    <p align="left"><p/>
 
-   <img src="./src/assets/imgs/flight_1.png" alt="" />
+   <img src="./src/style/imgs/flight_1.png" alt="" />
 
    <p align="left"><p/>
-   <img src="./src/assets/imgs/flight_2.png" alt="" />
+   <img src="./src/style/imgs/flight_2.png" alt="" />
    
 ## Tech Stack
 
