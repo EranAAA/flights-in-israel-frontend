@@ -33,7 +33,7 @@ https://flights-in-israel.herokuapp.com/
 
 **Server:** Node.js, MongoDB
 
-**Main Dependencies:** cors, mui, react-icons, PWA, notification
+**Main Dependencies:** cors, mui, react-icons,
 
    <p align="left">
    <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img
