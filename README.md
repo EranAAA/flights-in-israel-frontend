@@ -37,7 +37,8 @@ https://flights-in-israel.herokuapp.com/
    
    We can see all the flight history and learn that this flight keeps delaying each flight!
    <img src="./src/style/imgs/flight_3.png" alt="" />
-   
+   Continue..
+   <img src="./src/style/imgs/flight_4.png" alt="" />
 ## Tech Stack
 
 **Client:** React.js, Redux, SCSS
