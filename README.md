@@ -12,10 +12,14 @@ DASHBOARD:
 3. Statistics per Airline/Flight No
 4. Avg. canceled
   
-## Lessons Learned
+## Challenges
 
-I learned how to implement experiment advanced features such as PWA notification, also learnd to implement notification with firebase.
-Working with complex database on MongoDB, user authentication.
+Building server:
+API: https://data.gov.il/dataset/flydata
+UPDATE: every 15 min for only flights in schedule. 
+
+The main challenge was to display flight and their history (mainly for dashboard)
+For that reason I build a small server separately that runs every 30 min and gather the data and update in mongoDB. The logic is to add only new flights or update flights with status change (increment)
 
 ## Demo
 
