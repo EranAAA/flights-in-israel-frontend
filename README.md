@@ -38,9 +38,9 @@ https://flights-in-israel.herokuapp.com/
 
 **Client:** React.js, Redux, SCSS
 
-**Server:** Node.js, MongoDB
+**Server:** Node.js, MongoDB, cron
 
-**Main Dependencies:** cors, mui, react-icons,
+**Main Dependencies:** mui, react-icons, react-chartjs-2, react-bootstrap
 
    <p align="left">
    <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img
