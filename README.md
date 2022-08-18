@@ -71,7 +71,7 @@ https://flights-in-israel.herokuapp.com/
 Clone the project - Frontend
 
 ```bash
-  git clone https://github.com/EranAAA/schedule-your-day-forntend.git
+  git clone https://github.com/EranAAA/flights-in-israel-frontend.git
   npm i --force
   npm start
 ```
@@ -79,7 +79,7 @@ Clone the project - Frontend
 Clone the project - Backend
 
 ```bash
-  git clone https://github.com/EranAAA/schedule-your-day-backend.git
+  git clone https://github.com/EranAAA/flights-in-israel-backend.git
   npm i
   npm start
 ```
