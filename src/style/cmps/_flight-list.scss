@@ -2,8 +2,7 @@
    min-width: 310px;
    background-color: #FFF;
    position: relative;
-   height: calc(100vh - 260px);
-   overflow: scroll;
+
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -32,6 +31,8 @@
          display: flex;
          flex-direction: column;
          width: 100%;
+         height: calc(100vh - 500px);
+         overflow: scroll;
       }
 
       tr {

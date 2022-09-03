@@ -7,18 +7,34 @@
       font-family: Livvic-Regular;
    }
 
+   h3 {
+      background-color: #3d3c42a3;
+      color: #FFF;
+      line-height: 30px;
+      width: 100%;
+   }
+
+   span {
+      font-size: rem(13px);
+   }
+
    .graph-container {
-      width: 50%;
+      width: 60%;
       min-width: 370px;
       text-align: center;
       display: flex;
       flex-direction: column;
       gap: 10px;
 
+      @media (max-width: 900px) {
+         width: 99%;
+      }
+
       .departures {
          display: flex;
          justify-content: center;
          align-items: center;
+         flex-direction: column;
          gap: 30px;
          width: 100%;
          padding: 10px;

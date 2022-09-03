@@ -73,11 +73,16 @@ export const Dashboard = () => {
             </TabPanel>
 
             <TabPanel>
-               <h2>Destintaion</h2>
+               {/* <h2>Destintaion</h2> */}
+               <h3>להוסיף את חברת התעופה או מספר הקו הכי טוב מבחינת איחורים ולעשות השוואות לפי יעד של עיר או מדינה</h3>
+               <h3>סטטיסטיקה קבועה</h3>
+
             </TabPanel>
 
             <TabPanel>
-               <h2>Flight Number</h2>
+               {/* <h2>Flight Number</h2> */}
+               <h3>להראות התפתחות ברמה של מספר קו ברמה של אמצע או סוף שבוע</h3>
+               <h3>סטטיסטיקה קבועה</h3>
             </TabPanel>
 
          </Tabs>

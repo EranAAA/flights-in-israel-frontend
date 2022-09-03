@@ -18,7 +18,7 @@ export const FlightTable = ({ flightsGroup }) => {
 
    return (
       <section className="flight-top-table">
-         <h3>Top 15 Avg delay</h3>
+         <h3>Top 15 Avg delay (Departure Only)</h3>
          <div className="table-container">
             <TopNList
                title='Airline'

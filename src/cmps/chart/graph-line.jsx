@@ -21,9 +21,17 @@ export const GraphLine = ({ dataX, labelY, title, color }) => {
             color: '#121212',
             align: 'top',
             font: {
-               size: 13,
+               size: 12,
                family: 'Livvic-Regular'
             }
+         },
+      },
+      scales: {
+         x: {
+            display: true,
+         },
+         y: {
+            display: false,
          }
       },
    };

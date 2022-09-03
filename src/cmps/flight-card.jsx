@@ -62,25 +62,25 @@ export const FlightCard = ({ flightsGroup }) => {
 
             <CardDetails
                header={'Terminal 1+3'}
-               title={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 'ALL', 'D').average}`}
+               title={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 'ALL', 'D').average}.0`}
                subTitle={'Departure'} 
-               title2={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 'ALL', 'A').average}`}
+               title2={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 'ALL', 'A').average}.0`}
                subTitle2={'Arrival'}
                color={'Light'}
             />
             <CardDetails
                header={'Terminal 3'}
-               title={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 0, 'D').average} `}
+               title={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 0, 'D').average}.0 `}
                subTitle={'Departure'} 
-               title2={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 0, 'A').average} `}
+               title2={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 0, 'A').average}.0 `}
                subTitle2={'Arrival'}
                color={'Light'}
             />
             <CardDetails
-               header={'Terminal 3'}
-               title={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 1, 'D').average} `}
+               header={'Terminal 1'}
+               title={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 1, 'D').average}.0 `}
                subTitle={'Departure'} 
-               title2={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 1, 'A').average} `}
+               title2={`${averageCalculation(flightsGroup.flightsGroupByTerminal, 1, 'A').average}.0 `}
                subTitle2={'Arrival'}
                color={'Light'}
             />

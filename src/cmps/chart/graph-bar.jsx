@@ -19,13 +19,23 @@ export const GraphBar = ({ dataX, labelY, title, color, fontColor = '#121212', }
          },
          datalabels: {
             color: fontColor,
-            align: 'top',
+            anchor: 'center',
+            rotation: 90,
             font: {
                size: 12,
                family: 'Livvic-Regular'
             }
          }
       },
+      scales: {
+         x: {
+            display: true,
+         },
+         y: {
+            display: false,
+         }
+      },
+      
    };
 
    const labels = labelY
