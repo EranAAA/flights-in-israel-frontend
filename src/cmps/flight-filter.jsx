@@ -9,9 +9,10 @@ import { Search } from './mui/search'
 
 import { utilService } from '../services/util.service'
 
-export const FlightFilter = ({ filterFlight, flightsGroupList, board, lastRefresh, isLoading }) => {
+export const FlightFilter = ({ filterFlight, flightsGroupList, board, lastRefresh, isLoading, setIsFold }) => {
 
    let countLoads = useRef(false);
+   let accordionElm = useRef();
 
    const { filterDeparture, filterArrival } = useSelector(({ flightModule }) => flightModule)
 
@@ -37,12 +38,20 @@ export const FlightFilter = ({ filterFlight, flightsGroupList, board, lastRefres
       filterFlight({ flightNo, flightCompany, destination, status, scheduleDate })
    }, [destination, flightCompany, status, scheduleDate, flightNo])
 
+   const onFoldAccordion = () => {
+      if (accordionElm.current.querySelector('.show')) {
+         setIsFold(false)
+      } else {
+         setIsFold(true)
+      }
+   }
+
    return (
       <section className="flight-filter">
          <Accordion defaultActiveKey="1">
-            <Accordion.Item eventKey="1">
-               <Accordion.Header >Filter</Accordion.Header>
-               <Accordion.Body>
+            <Accordion.Item ref={accordionElm} eventKey="1">
+               <Accordion.Header onClick={onFoldAccordion}>Filter</Accordion.Header>
+               <Accordion.Body >
                   <div className="dropdown-container">
                      <SelectSmall data={utilService.getFlightList('CHOPERD', flightsGroupList, flightCompany, destination, board)} title="Airline" value={flightCompany || ``} setFilter={setFlightCompany} />
                      <SelectSmall data={utilService.getFlightList('CHLOCCT', flightsGroupList, flightCompany, destination, board)} title="Destination" value={destination || ``} setFilter={setDestination} />

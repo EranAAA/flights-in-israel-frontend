@@ -14,9 +14,10 @@ export const AppHeader = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                <Nav className="me my-nav">
                   <Nav.Link eventKey="1" as={Link} to="/">Home</Nav.Link>
-                  <Nav.Link eventKey="2" as={Link} to="/departure">Departure</Nav.Link>
-                  <Nav.Link eventKey="3" as={Link} to="/arrival">Arrival</Nav.Link>
-                  <Nav.Link eventKey="4" as={Link} to="/dashboard">Dashboard</Nav.Link>
+                  <Nav.Link eventKey="2" as={Link} to="/online">Online</Nav.Link>
+                  <Nav.Link eventKey="3" as={Link} to="/departure">Departure History</Nav.Link>
+                  <Nav.Link eventKey="4" as={Link} to="/arrival">Arrival History</Nav.Link>
+                  <Nav.Link eventKey="5" as={Link} to="/dashboard">Dashboard</Nav.Link>
                </Nav>
             </Navbar.Collapse>
          </Container>

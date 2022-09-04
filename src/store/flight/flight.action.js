@@ -1,5 +1,20 @@
+import axios from 'axios'
+
 import { flightService } from '../../services/flight.service.js'
 import { utilService } from '../../services/util.service'
+
+export function getOnlineFlights(filter) {
+   try {
+      return async (dispatch) => {
+         const onlineFlights = await axios.get('https://data.gov.il/api/3/action/datastore_search?resource_id=e83f763b-b7d7-479e-b172-ae981ddc6de5&limit=10000')
+         console.log('Got Flights from DataGov')
+         dispatch({ type: 'SET_ONLINE_FLIGHTS', onlineFlights, filter })
+      }
+
+   } catch (error) {
+      console.log(`Can't get flights from DataGov: ${error}`)
+   }
+}
 
 export function setFlight(flight) {
    return (dispatch) => {

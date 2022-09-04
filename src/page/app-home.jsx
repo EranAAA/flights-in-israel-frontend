@@ -37,8 +37,8 @@ export const AppHome = () => {
             <img src={flight_2} alt="" />
 
             <hr />
-            <h4>Example for flight 6H 531 with ISRAIR AIRLINES: </h4>
-            <h4>We can see all the flight history and learn that this flight keeps delaying each flight!</h4>
+            <h5>Example for flight 6H 531 with ISRAIR AIRLINES: </h5>
+            <h5>We can see all the flight history and learn that this flight keeps delaying each flight!</h5>
 
             <img src={flight_3} alt="" />
             <img src={flight_4} alt="" />

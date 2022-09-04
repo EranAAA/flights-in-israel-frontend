@@ -1,0 +1,36 @@
+.app-flight-online {
+   height: calc(100vh - 59px);
+   background-color: darkgrey;
+
+   .board {
+      font-size: rem(55px);
+      font-family: Skyfont;
+      margin: 0;
+      text-align: center;
+   }
+
+   .flight-table {
+      display: flex;
+      z-index: 10;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      input {
+         line-height: 18px;
+         padding-left: 10px;
+         width: 200px;
+      }
+   }
+
+   .flight-group {
+      display: flex;
+      justify-content: center;
+   }
+
+
+   .title {
+      text-align: center;
+   }
+}

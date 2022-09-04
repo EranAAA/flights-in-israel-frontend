@@ -10,16 +10,18 @@
 
 // PAGE
 @import './page/app-flight';
+@import './page/app-flight-online';
 @import './page/app-home';
 @import './page/app-dashboard';
+@import './cmps/app-header';
 
 // COMPONENTS
-@import './cmps/app-header';
 @import './cmps/flight-list';
 @import './cmps/flight-table';
 @import './cmps/flight-preview';
 @import './cmps/flight-card';
 @import './cmps/flight-filter';
+@import './cmps/flight-filter-online';
 @import './cmps/flight-graph';
 @import './cmps/dashboard-airline';
 

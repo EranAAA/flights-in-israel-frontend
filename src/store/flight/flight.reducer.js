@@ -1,9 +1,11 @@
 const initialState = {
    flights: [],
+   onlineFlights: [],
    dashboard: {},
    flightList: [],
    dashboardAirline: [],
    lastRefresh: '',
+   lastFetch: '',
    minDate: '',
    maxDate: '',
    filterDeparture: {},
@@ -39,6 +41,23 @@ export function flightReducer(state = initialState, action) {
          if (action.filter.board === 'A') newState = { ...state, filterArrival: action.filter }
          break
 
+      case 'SET_ONLINE_FLIGHTS':
+         if (action.filter) {
+            newState =
+            {
+               ...state, onlineFlights: action.onlineFlights.data.result.records
+                  .filter(flight => flight.CHFLTN === action.filter)
+                  .sort((a, b) => new Date(b.CHPTOL) - new Date(a.CHPTOL)),
+               lastFetch: Date.now()
+            }
+         } else {
+            newState = {
+               ...state, onlineFlights: action.onlineFlights.data.result.records
+               // .sort((a, b) => new Date(b.CHPTOL) - new Date(a.CHPTOL))
+               , lastFetch: Date.now()
+            }
+         }
+         break
       default:
    }
    // For debug:
