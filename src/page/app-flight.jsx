@@ -40,7 +40,7 @@ export const AppFlight = ({ board }) => {
       <section className="app-flight" >
          <p className='board'> {board === 'D' ? 'Departure' : 'Arrival'} </p>
          <div className="flight-table">
-            <FlightFilter filterFlight={filterFlight} setIsFold={setIsFold} isFoldflightsGroupList={flightList} board={board} lastRefresh={lastRefresh} isLoading={isLoading} />
+            <FlightFilter filterFlight={filterFlight} setIsFold={setIsFold} flightsGroupList={flightList} board={board} lastRefresh={lastRefresh} isLoading={isLoading} />
             <FlightList flights={flights} board={board} isFold={isFold}/>
          </div>
       </section>

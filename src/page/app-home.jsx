@@ -12,12 +12,16 @@ export const AppHome = () => {
       <section className="app-home">
          {/* <img src="https://www.electra-elevators.co.il/filestock/img/img_1500448530577-6.jpg" alt="" /> */}
 
-         <h1>Flights in israel</h1>
-         <h3>Get all data about your flight</h3>
-         <h3>Base on data from israel airport only (The data updating every 30 min)</h3>
+         <h1 style={{backgroundColor: '#152d66', width: '100%', color: '#FFF'}}>Flights in israel</h1>
+         <h3 style={{backgroundColor: '#152d66', width: '100%', color: '#FFF'}}>Get all data about your flight</h3>
+         <h3 style={{backgroundColor: '#152d66', width: '100%', color: '#FFF'}}>(Base on data from israel airport only)</h3>
          <br />
-         <p>Please do not rely on the result, its only</p>
-         <p>The website is one of my projects protfolio and its only for my own practice</p>
+
+         <h5 style={{textDecoration: 'underline'}}>Database updating duration</h5>
+         <h5 >History and Dashboard tabs every 30 min</h5>
+         <h5>Online board tab every 15 min</h5>
+         <br />
+         <p style={{backgroundColor: 'tomato', width: '100%', color: '#FFF'}}>Please do not rely on the results shown, even though the data is indeed correct, I cannot guarantee it. The project was built and presented for personal practice.</p>
 
          <div className="links">
             <a href="https://linkedin.com/in/eran-avichzer" target="_blank" ><img align="center"

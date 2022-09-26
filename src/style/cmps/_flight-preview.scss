@@ -57,6 +57,7 @@ th {
 }
 
 .flight-info-container {
+
    background-color: white;
    display: block;
    line-height: 27px;
@@ -66,8 +67,9 @@ th {
    font-size: rem(14px);
    text-align: left;
    padding: 10px;
-   line-height: 25px;
-   cursor: initial;
+   min-height: 175px;
+
+   filter: drop-shadow(0px 0px 1px #121212);
 
    span {
       font-size: rem(14px);
@@ -82,11 +84,30 @@ th {
 
       @media (max-width: 700px) {
          top: unset;
-         bottom: 10px;
+         bottom: 25px;
          right: 10px;
          width: 100px;
       }
+   }
 
+   .show-history {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%);
+
+      text-decoration: underline;
+      cursor: pointer;
+      width: 100%;
+      background-color: darkgray;
+
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+         color: #FFF;
+         ;
+      }
    }
 
 }

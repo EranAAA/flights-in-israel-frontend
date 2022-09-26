@@ -19,13 +19,13 @@ const useStyles = makeStyles(theme => ({
    }
 }));
 
-export const SelectSmall = ({ data, title, setFilter, value, marginTop = 5  }) => {
+export const SelectSmall = ({ data, title, setFilter, value, marginTop = 5 }) => {
+
    const classes = useStyles();
    const [change, setChange] = useState('');
 
-// console.log('date', data[0]);
-// console.log('title', title);
-// console.log('value', value);
+   // console.log('title', title);
+   // console.log('value', value);
 
    useEffect(() => {
       setChange(value)
@@ -35,7 +35,7 @@ export const SelectSmall = ({ data, title, setFilter, value, marginTop = 5  }) =
       setChange(target.value)
       setFilter(target.value)
    }
-   
+
    return (
       <Box sx={{ minWidth: 120 }}>
          <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
@@ -44,7 +44,7 @@ export const SelectSmall = ({ data, title, setFilter, value, marginTop = 5  }) =
                value={change}
                label={`${title}++`}
                onChange={handleChange}
-               name={title} 
+               name={title}
                style={{ height: 40, width: 155, fontSize: 13, lineHeight: 2, marginTop: marginTop, fontFamily: 'Livvic-Regular' }}
                MenuProps={{ PaperProps: { sx: { maxHeight: 400, width: 200 } } }}
             >

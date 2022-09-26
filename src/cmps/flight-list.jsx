@@ -1,3 +1,5 @@
+// import { modalClasses } from '@mui/material'
+// import { divide } from 'lodash'
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
@@ -5,8 +7,11 @@ import { FlightPreview } from './flight-preview'
 
 export const FlightList = ({ flights, board, isFold }) => {
 
+   console.log('FlightList');
+
    const location = useLocation()
    const [height, setHeight] = useState('')
+   const [isHistoryModalOpen, setIsHistoryModalOpen] = useState(false)
 
    useEffect(() => {
       console.log('location', location.pathname);
@@ -31,13 +36,23 @@ export const FlightList = ({ flights, board, isFold }) => {
                </tr>
             </thead>
             <tbody style={{ height: `calc(100vh - ${height}px)` }}>
-               {flights && flights.map(flight => <FlightPreview key={flight._id} flight={flight} />)}
+               {flights && flights.map(flight => <FlightPreview key={flight._id} flight={flight} setIsHistoryModalOpen={setIsHistoryModalOpen} />)}
             </tbody>
          </table>
+
+         {
+         // ********** USEMEMO **********
+         // ********** USEMEMO **********
+         // ********** USEMEMO **********
+         // ********** USEMEMO **********
+         }
+
+         {isHistoryModalOpen &&
+            <div className="history-modal">
+               <div className="close-modal" onClick={() => setIsHistoryModalOpen(false)}>X</div>
+            </div>
+         }
 
       </section>
    )
 }
-
-
-

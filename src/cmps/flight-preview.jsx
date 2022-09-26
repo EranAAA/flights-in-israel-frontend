@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import { utilService } from '../services/util.service';
 
-export const FlightPreview = ({ flight }) => {
+export const FlightPreview = ({ flight, setIsHistoryModalOpen }) => {
 
    const [toggleModal, setToggleModal] = useState(false)
 
@@ -60,12 +60,21 @@ export const FlightPreview = ({ flight }) => {
          {toggleModal &&
             <td colSpan={8} className='flight-info-container' >
                <div className='info-title'> <span>Carrier</span>{` -  Flight No. ${flight.CHOPER} ${flight.CHFLTN} with ${flight.CHOPERD}`}</div>
-               <div className='info-description'><span>Destination</span> {`${flight.CHAORD === 'A' ? ' -  Arrive from' : ' -  Departure to'} ${flight.CHLOCCT} - ${flight.CHLOC1T} (${flight.CHLOC1}) ${flight.CHAORD === 'A' ? 'lending in' : 'from'} terminal ${flight.CHTERM}.`}</div>
+               <div className='info-description'>
+                  <span>Destination</span>
+                  {`
+                  ${flight.CHAORD === 'A' ? ' -  Arrive from' : ' -  Departure to'} 
+                  ${flight.CHLOCCT} - ${flight.CHLOC1T} (${flight.CHLOC1}) 
+                  ${flight.CHAORD === 'A' ? 'lending in' : 'from'} terminal ${flight.CHTERM}.
+               `}
+               </div>
                <div className='description'><span>Scheduled Time</span>{`  -  ${CHSTOLFormatted}`}</div>
                <div className='description'><span>Estimated Time</span>{`  -  ${CHPTOLFormatted} (${diffDaysInMinutes}min)`}</div>
                <img src={utilService.getAirLineLogo(flight.CHOPER)} alt="" />
+               <div className="show-history" onClick={() => setIsHistoryModalOpen(true)}>show-history</div>
             </td>
          }
+
       </>
 
    )
