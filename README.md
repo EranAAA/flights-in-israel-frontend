@@ -91,6 +91,6 @@ Clone the project - Backend
   npm start
 ```
 MongoDB: 
-Create database: board_db
+Create database: board_db 
 collection: user, board
 
