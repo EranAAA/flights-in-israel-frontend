@@ -9,7 +9,7 @@ If you need to check in addition to your flight you also get the full flight his
 DASHBOARD: 
 1. Avg. delay
 2. Flights per day/hour
-3. Statistics per Airline/Flight No
+3. Statistics per Airline/Flight No 
 4. Avg. canceled
   
 ## Challenges
